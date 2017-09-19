@@ -4,6 +4,7 @@ Forking ForteXorcist and updating it to work with Legion
 This was the last message that was posted to WoW Interface: 
 
 Things, that should work:
+
 - Login without LUA errors
 - Class files (all specs):
 - Death Knight
@@ -14,7 +15,9 @@ Things, that should work:
 - Shaman
 - Warrior
 - Rogue
+
 Things, that are still on my list:
+
 - Class files:
 - Monk
 - Paladin
