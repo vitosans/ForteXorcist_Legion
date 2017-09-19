@@ -1,0 +1,10 @@
+## Interface: 60000
+## Author: Alea
+## Title: Forte|cff1784d1ElvUI|r
+## Notes: ElvUI Skin for ForteX
+## SavedVariables:
+## OptionalDeps:
+## Dependencies:Forte_Core
+## DefaultState: disabled
+
+core.lua
