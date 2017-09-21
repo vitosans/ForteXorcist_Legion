@@ -17,42 +17,42 @@
 --[[>> still needs translating]]
 
 if FW.CLASS == "ROGUE" then
-	local FWL = FW.L;
+    local FWL = FW.L;
 
-	-- THESE ARE INTERFACE STRINGS ONLY AND TRANSLATING THEM IS OPTIONAL
-	-- French
-	if GetLocale() == "frFR" then
-	--[[>>]]FWL.SAP_BREAK = "Sap Break";
-	--[[>>]]FWL.SAP_FADE = "Sap Fade";
-		
-	-- Russian
-	elseif GetLocale() == "ruRU" then
-	--[[>>]]FWL.SAP_BREAK = "Sap Break";
-	--[[>>]]FWL.SAP_FADE = "Sap Fade";
-		
-	-- simplified chinese
-	elseif GetLocale() == "zhCN" then
-	--[[>>]]FWL.SAP_BREAK = "Sap Break";
-	--[[>>]]FWL.SAP_FADE = "Sap Fade";
+    -- THESE ARE INTERFACE STRINGS ONLY AND TRANSLATING THEM IS OPTIONAL
+    -- French
+    if GetLocale() == "frFR" then
+        --[[>>]]FWL.SAP_BREAK = "Sap Break";
+        --[[>>]]FWL.SAP_FADE = "Sap Fade";
 
-	-- traditional chinese
-	elseif GetLocale() == "zhTW" then
-	--[[>>]]FWL.SAP_BREAK = "Sap Break";
-	--[[>>]]FWL.SAP_FADE = "Sap Fade";
-		
-	-- DE by DeaTHCorE (found a error? have a better translation? send me a email at dhaft@gmx.de)
-	elseif GetLocale() == "deDE" then
-	--[[>>]]FWL.SAP_BREAK = "Sap Break";
-	--[[>>]]FWL.SAP_FADE = "Sap Fade";
-		
-	--Korean
-	elseif GetLocale() == "koKR" then
-		FWL.SAP_BREAK = "ê¸°ì ˆ íš¨ê³¼ ê¹¨ì§�";
-		FWL.SAP_FADE = "ê¸°ì ˆ íš¨ê³¼ í’€ë¦¼";
-		
-	-- ENGLISH
-	else	-- standard english version
-		FWL.SAP_BREAK = "Sap Break";
-		FWL.SAP_FADE = "Sap Fade";
-	end
+        -- Russian
+    elseif GetLocale() == "ruRU" then
+        --[[>>]]FWL.SAP_BREAK = "Sap Break";
+        --[[>>]]FWL.SAP_FADE = "Sap Fade";
+
+        -- simplified chinese
+    elseif GetLocale() == "zhCN" then
+        --[[>>]]FWL.SAP_BREAK = "Sap Break";
+        --[[>>]]FWL.SAP_FADE = "Sap Fade";
+
+        -- traditional chinese
+    elseif GetLocale() == "zhTW" then
+        --[[>>]]FWL.SAP_BREAK = "Sap Break";
+        --[[>>]]FWL.SAP_FADE = "Sap Fade";
+
+        -- DE by DeaTHCorE (found a error? have a better translation? send me a email at dhaft@gmx.de)
+    elseif GetLocale() == "deDE" then
+        --[[>>]]FWL.SAP_BREAK = "Sap Break";
+        --[[>>]]FWL.SAP_FADE = "Sap Fade";
+
+        --Korean
+    elseif GetLocale() == "koKR" then
+        FWL.SAP_BREAK = "ê¸°ì ˆ íš¨ê³¼ ê¹¨ì§�";
+        FWL.SAP_FADE = "ê¸°ì ˆ íš¨ê³¼ í’€ë¦¼";
+
+        -- ENGLISH
+    else	-- standard english version
+        FWL.SAP_BREAK = "Sap Break";
+        FWL.SAP_FADE = "Sap Fade";
+    end
 end
