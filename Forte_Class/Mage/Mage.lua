@@ -118,7 +118,7 @@ if FW.CLASS == "MAGE" then
         --[[local clearcasting = FW:SpellName(12536);
         ST:RegisterOnBuffGain(function(buff)
             if buff == clearcasting then
-                FW:PlaySound("TimerClearcastingSound");
+                PlaySound(PlaySoundKitID and "SimonGame_Visual_GameStart" or SOUNDKIT.SIMONGAME_VISUAL_GAMESTART);
             end
         end);]]
 

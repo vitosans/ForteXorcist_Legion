@@ -939,7 +939,7 @@ local function ST_SpellFail(s,resist,target,typ,id,icon,guid,...)
     if FW.Settings.TimerResistsColor[0] then
         FW:Show(_G.CombatLog_OnEvent(_G.Blizzard_CombatLog_Filters.filters[_G.Blizzard_CombatLog_Filters.currentFilter], ...),unpack(FW.Settings.TimerResistsColor));
     end
-    FW:PlaySound("TimerResistSound");
+    PlaySound(PlaySoundKitID and "SimonGame_Visual_BadPress" or SOUNDKIT.SIMONGAME_VISUAL_BADPRESS);
     for i=1,st.rows,1 do -- remove any other resist of this spell that's still on the bar
         if st[i][8] == s and st[i][14] >= FAILED and st[i][11] == guid then
             st:remove(i);
@@ -993,7 +993,7 @@ end
 local function ST_BreakMessages(unit,mark,spell)
     for i, f in ipairs(ST_OnTimerBreak) do
         if f(unit,mark,spell) then
-            FW:PlaySound("TimerBreakSound");
+            PlaySound(PlaySoundKitID and "SimonGame_Visual_LevelStart" or SOUNDKIT.SIMONGAME_VISUAL_LEVELSTART);
         end
     end
 end
@@ -1026,7 +1026,7 @@ local function ST_UpdateSpellTimers()--preferably only remove timers in this fun
             local unit,mark = st[i][4],st[i][19];
             if mark~=0 then unit=FW.RaidIcons[mark]..unit;end
             CA:CastShow(ST_OnTimerFade[ st[i][8] ],unit);
-            FW:PlaySound("TimerFadeSound");
+            PlaySound(PlaySoundKitID and "ShaysBell" or SOUNDKIT.SHAYSBELL);
         end
 
         if t14 == IGNORE then -- instantly remove ignored timers on expire
@@ -1946,7 +1946,7 @@ local function ST_TargetChanged()
         if button == "RightButton" then
         FW:ScrollTo(FWL.SPELL_TIMER,nil,frame.index);
         end
-        PlaySound("igMainMenuOptionCheckBoxOn");
+        PlaySound(PlaySoundKitID and "igMainMenuOptionCheckBoxOn" or SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
         end);
 
         --functions
