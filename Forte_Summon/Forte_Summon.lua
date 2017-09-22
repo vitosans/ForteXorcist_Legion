@@ -444,7 +444,7 @@ function FW:SUFrame_OnClick(button)
     else
         FW:ScrollTo(FWL.SUMMON_ASSISTANT);
     end
-    PlaySound("igMainMenuOptionCheckBoxOn");
+    PlaySound(PlaySoundKitID and "igMainMenuOptionCheckBoxOn" or SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
 end
 
 function FW:IgnoreClick()

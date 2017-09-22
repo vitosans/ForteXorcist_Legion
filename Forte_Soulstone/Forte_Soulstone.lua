@@ -417,7 +417,7 @@ local function SS_SoulstoneScan(unit,unitName,unitClass,flag,update)
                         FW.Saved.Timers[unitName][1] = SS_RES;
                         FW.Saved.Timers[unitName][3] = FW.FLAG.RES;
 
-                        FW:PlaySound("SoulstoneFadeSound");
+                        PlaySound(PlaySoundKitID and "SimonGame_Visual_GameTick" or SOUNDKIT.SIMONGAME_VISUAL_GAMETICK);
                     end
 
                     FW.Saved.Timers[unitName][1] = FW.Saved.Timers[unitName][1] + FW.Saved.Timers[unitName][2] - update;
@@ -546,7 +546,7 @@ function FW:SSFrame_OnClick(button)
     else
         FW:ScrollTo(FWL.SOULSTONE_TRACKER);
     end
-    PlaySound("igMainMenuOptionCheckBoxOn");
+    PlaySound(PlaySoundKitID and "igMainMenuOptionCheckBoxOn" or SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
 end
 
 function FW:SoulstoneOnload()

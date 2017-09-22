@@ -897,7 +897,7 @@ local function CD_ScanBookCooldowns()
             if button == "RightButton" then
                 FW:ScrollTo(FWL.SECONDARY_SPLASH);
             end
-            PlaySound("igMainMenuOptionCheckBoxOn");
+            PlaySound(PlaySoundKitID and "igMainMenuOptionCheckBoxOn" or SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
         end
 
         local function Frame_OnClick(button)
@@ -905,7 +905,7 @@ local function CD_ScanBookCooldowns()
             if button == "RightButton" then
                 FW:ScrollTo(FWL.COOLDOWN_TIMER);
             end
-            PlaySound("igMainMenuOptionCheckBoxOn");
+            PlaySound(PlaySoundKitID and "igMainMenuOptionCheckBoxOn" or SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
         end
 
         local function CD_ShowTimeFor(id)
